@@ -67,6 +67,7 @@ m.controller('app.layout.sidebar', ['$scope', '$state', 'security', 'services', 
         security.principal.authenticate(null);
         services.state.go('app.login');
     }
+    window['MainMenu'].init();
 }])
 
 
